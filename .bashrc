@@ -1,6 +1,10 @@
 . ~/.proxy
 
-alias ls='ls -G'
+if [ $(uname) == 'Darwin' ]; then
+  alias ls='ls -G'
+else
+  alias ls='ls --color'
+fi
 alias ll='ls -l'
 
 #export PS1='\[\e[1;32m\][\u@mymac \W]\[\e[0m\] \e[0;34m$(date +%k:%M:%S)\] \$ \[\e[0m\]'
