@@ -1,6 +1,4 @@
-export http_proxy="http://proxy.uk.specsavers.com:8080"
-export https_proxy="http://proxy.uk.specsavers.com:8080"
-
+. ~/.proxy
 
 alias ls='ls -G'
 alias ll='ls -l'
