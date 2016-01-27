@@ -1,4 +1,3 @@
-
 if [[ `uname` = 'Darwin' ]]; then
   # brew stuffs
   export PATH="/usr/local/bin:$PATH"
@@ -6,6 +5,13 @@ if [[ `uname` = 'Darwin' ]]; then
   export HOMEBREW_CASK_OPTS="--appdir=/Applications"
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 fi
+
+
+# Fix colors in iterm
+export PROMPT_PREPOSITION_COLOR="\033[1;22m"
+export PROMPT_DEVICE_COLOR="\033[1;35m"
+export PROMPT_GIT_STATUS_COLOR="\033[1;96m"
+
 
 for file in ~/.{bash_prompt,aliases,functions,path,extra,exports,proxy,corp,dockerfunctions}; do
   [[ -r "$file" ]] && [[ -f "$file" ]] && source "$file"
