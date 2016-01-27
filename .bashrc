@@ -1,12 +1,3 @@
-. ~/.proxy
-
-if [ $(uname) == 'Darwin' ]; then
-  alias ls='ls -G'
-else
-  alias ls='ls --color'
-fi
-alias ll='ls -l'
-
 #export PS1='\[\e[1;32m\][\u@mymac \W]\[\e[0m\] \e[0;34m$(date +%k:%M:%S)\] \$ \[\e[0m\]'
 
 #export PS1="\u@MyMac \W [$(date +%k:%M:%S)] \$ "
@@ -84,6 +75,6 @@ xterm*|rxvt*)
     ;;
 esac
 
-#if [[ -f $HOME/.bash_profile ]]; then
-#  source $HOME/.bash_profile
-#fi
+if [[ -f $HOME/.bash_profile ]]; then
+  source $HOME/.bash_profile
+fi
