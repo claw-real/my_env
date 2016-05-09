@@ -9,6 +9,6 @@ git clone https://github.com/scrooloose/syntastic.git
 git clone https://github.com/bling/vim-airline ~/.vim/bundle/vim-airline
 git submodule add -f git://github.com/rodjek/vim-puppet.git .vim/bundle/puppet
 git clone https://github.com/rodjek/vim-puppet.git
-git clone git://github.com/godlygeek/tabular.git
+git clone https://github.com/godlygeek/tabular.git
 #pip install pylint
 
