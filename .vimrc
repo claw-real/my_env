@@ -19,6 +19,10 @@ set expandtab
 set smarttab
 set autoindent
 
+set tabstop=2
+set shiftwidth=2
+set expandtab
+
 set pastetoggle=<F2>
 
 let &t_SI .= "\<Esc>[?2004h"
