@@ -36,4 +36,10 @@ function! XTermPasteBegin()
   return ""
 endfunction
 
+let g:syntastic_puppet_puppetlint_args='--no-80chars-check --class_inherits_from_params_class'
+"let g:syntastic_puppet_puppetlint_args='--class_inherits_from_params_class'
+let g:airline_powerline_fonts = 1
+let g:airline#extensions#tabline#enabled = 1
+let g:airline_theme='solarized'
+
 set laststatus=2

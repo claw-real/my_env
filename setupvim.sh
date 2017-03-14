@@ -12,5 +12,6 @@ git clone https://github.com/ntpeters/vim-better-whitespace.git ~/.vim/bundle/vi
 git clone https://github.com/rodjek/vim-puppet.git
 git clone https://github.com/godlygeek/tabular.git
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
+git clone https://github.com/vim-airline/vim-airline-themes.git ~/.vim/bundle/vim-airline-themes
 #pip install pylint
 
