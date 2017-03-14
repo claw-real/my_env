@@ -13,5 +13,6 @@ git clone https://github.com/rodjek/vim-puppet.git
 git clone https://github.com/godlygeek/tabular.git
 git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 git clone https://github.com/vim-airline/vim-airline-themes.git ~/.vim/bundle/vim-airline-themes
+git clone git://github.com/altercation/vim-colors-solarized.git
 #pip install pylint
 
