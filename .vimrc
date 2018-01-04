@@ -8,10 +8,10 @@ set statusline+=%#warningmsg#
 set statusline+=%{SyntasticStatuslineFlag()}
 set statusline+=%*
 
-let g:syntastic_always_populate_loc_list = 1
-let g:syntastic_auto_loc_list = 1
-let g:syntastic_check_on_open = 1
-let g:syntastic_check_on_wq = 0
+"let g:syntastic_always_populate_loc_list = 1
+"let g:syntastic_auto_loc_list = 1
+"let g:syntastic_check_on_open = 1
+"let g:syntastic_check_on_wq = 0
 
 set nocompatible
 filetype indent plugin on
@@ -43,3 +43,11 @@ let g:airline#extensions#tabline#enabled = 1
 let g:airline_theme='solarized'
 
 set laststatus=2
+
+" -----{ ALE }-----
+let g:ale_open_list = 1
+let g:ale_puppet_puppetlint_options='--no-autoloader_layout-check --no-documentation-check --no-80chars-check --no-class_inherits_from_params_class-check'
+
+let g:ale_echo_msg_error_str = 'E'
+let g:ale_echo_msg_warning_str = 'W'
+let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
