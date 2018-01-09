@@ -51,3 +51,6 @@ let g:ale_puppet_puppetlint_options='--no-autoloader_layout-check --no-documenta
 let g:ale_echo_msg_error_str = 'E'
 let g:ale_echo_msg_warning_str = 'W'
 let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
+
+" Write this in your vimrc file
+let g:ale_lint_on_text_changed = 'never'
