@@ -3,7 +3,7 @@
 #export PS1="\u@MyMac \W [$(date +%k:%M:%S)] \$ "
 export PS1="\u@MyMac \W [\D{%T}] \$ "
 
-export PATH="$PATH:$HOME/.rvm/bin" # Add RVM to PATH for scripting
+export PATH="$PATH:${HOME}/.rvm/bin:${HOME}/bin" # Add RVM to PATH for scripting
 
 
 
