@@ -1,7 +1,7 @@
-if [[ `uname` = 'Darwin' ]]; then
+if [[ $(uname) = 'Darwin' ]]; then
   # brew stuffs
   export PATH="/usr/local/bin:$PATH"
-  source "`brew --prefix grc`/etc/grc.bashrc"
+  source "$(brew --prefix grc)/etc/grc.bashrc"
   export HOMEBREW_CASK_OPTS="--appdir=/Applications"
   [[ -s "$HOME/.rvm/scripts/rvm" ]] && source "$HOME/.rvm/scripts/rvm" # Load RVM into a shell session *as a function*
 fi
@@ -23,6 +23,20 @@ shopt -s nocaseglob
 
 # Append to the Bash history file, rather than overwriting it
 shopt -s histappend
+
+HISTCONTROL=ignoredups:ignorespace
+
+# Append to history file for each new command
+export PROMPT_COMMAND='history -a'
+
+# for setting history length see HISTSIZE and HISTFILESIZE in bash(1)
+HISTFILESIZE=10000
+HISTSIZE=10000
+
+# Timestamp bash history
+export HISTTIMEFORMAT="%d/%m/%y %T "
+
+export PROMPT_COMMAND='if [ "$(id -u)" -ne 0 ]; then echo "$$ $(pwd) $(history 1)" >> ~/.logs/bash-history-$(date "+%Y-%m-%d").log; fi;'
 
 # Autocorrect typos in path names when using `cd`
 shopt -s cdspell
@@ -46,9 +60,9 @@ if ! shopt -oq posix; then
 fi
 
 # OSX bash completion
-if [[ `uname` = 'Darwin' ]]; then
-  if [ -f $(brew --prefix)/etc/bash_completion ]; then
-    . $(brew --prefix)/etc/bash_completion
+if [[ $(uname) = 'Darwin' ]]; then
+  if [ -f "$(brew --prefix)/etc/bash_completion" ]; then
+    . "$(brew --prefix)/etc/bash_completion"
   fi
 fi
 
