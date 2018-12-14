@@ -16,5 +16,9 @@ git clone https://github.com/fatih/vim-go.git ~/.vim/bundle/vim-go
 git clone https://github.com/vim-airline/vim-airline-themes.git ~/.vim/bundle/vim-airline-themes
 git clone https://github.com/altercation/vim-colors-solarized.git
 git clone https://github.com/tpope/vim-fugitive.git
+git clone https://github.com/sheerun/vim-polyglot  ~/.vim/bundle/vim-polyglot
+git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
+git clone git://github.com/mfukar/robotframework-vim.git ~/.vim/bundle/robotframework-vim
+
 #pip install pylint
 

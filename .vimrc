@@ -54,3 +54,10 @@ let g:ale_echo_msg_format = '[%linter%] %s [%severity%]'
 
 " Write this in your vimrc file
 let g:ale_lint_on_text_changed = 'never'
+
+" Polyglot config
+set runtimepath^=~/.vim/bundle/ctrlp.vim
+set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " Linux/MacOSX
+let g:ctrlp_working_path_mode = 'ra'
+let g:ctrlp_map = '<c-p>'
+let g:ctrlp_cmd = 'CtrlP'

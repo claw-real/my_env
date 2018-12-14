@@ -70,4 +70,4 @@ fi
 #[[ -e "$HOME/.ssh/config" ]] && complete -o "default" -o "nospace" -W "$(grep "^Host" ~/.ssh/config | grep -v "[?*]" | cut -d " " -f2 | tr ' ' '\n')" scp sftp ssh
 
 ## Turn off sourcing shellcheck warning
-export SHELLCHECK_OPTS="-e SC1090"
+export SHELLCHECK_OPTS="-e SC1090 -e SC2129"
