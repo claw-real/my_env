@@ -56,9 +56,9 @@ if [ -n "$force_color_prompt" ]; then
 fi
 
 if [ "$color_prompt" = yes ]; then
-    if [ $(uname) == 'Darwin' ]; then
+    if [ "$(uname)" == 'Darwin' ]; then
       PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@MyMac\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] [\D{%T}]\$ '
-    else 
+    else
       PS1='${debian_chroot:+($debian_chroot)}\[\033[01;32m\]\u@\h\[\033[00m\]:\[\033[01;34m\]\w\[\033[00m\] [\D{%T}]\$ '
     fi
 else
@@ -76,5 +76,7 @@ xterm*|rxvt*)
 esac
 
 if [[ -f $HOME/.bash_profile ]]; then
-  source $HOME/.bash_profile
+  source "$HOME/.bash_profile"
 fi
+
+function cd() { if [ $# -eq 2 ]; then builtin cd ${PWD/$1/$2}; else builtin cd $1; fi }
