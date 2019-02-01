@@ -9,9 +9,10 @@
   go_up = <Alt><Super>Up
   next_tab = <Shift>Right
   prev_tab = <Shift>Left
-  scaled_zoom = <Shift><Super>Return
+  scaled_zoom = <Primary><Shift>x
   split_horiz = <Shift><Super>d
   split_vert = <Super>d
+  toggle_zoom = <Shift><Super>Return
 [layouts]
   [[default]]
     [[[child1]]]
