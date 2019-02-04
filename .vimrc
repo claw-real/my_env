@@ -61,3 +61,6 @@ set wildignore+=*/tmp/*,*.so,*.swp,*.zip     " Linux/MacOSX
 let g:ctrlp_working_path_mode = 'ra'
 let g:ctrlp_map = '<c-p>'
 let g:ctrlp_cmd = 'CtrlP'
+
+" Autoclose when last buffer is closed
+autocmd QuitPre * if empty(&bt) | lclose | endif
