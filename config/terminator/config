@@ -7,8 +7,8 @@
   go_left = <Alt><Super>Left
   go_right = <Alt><Super>Right
   go_up = <Alt><Super>Up
-  next_tab = <Shift>Right
-  prev_tab = <Shift>Left
+  next_tab = <Primary><Alt>Right
+  prev_tab = <Primary><Alt>Left
   scaled_zoom = <Primary><Shift>x
   split_horiz = <Shift><Super>d
   split_vert = <Super>d
