@@ -6,6 +6,7 @@ cp .bash_prompt ~
 cp .bashrc ~
 cp .rubocop.yml ~
 mkdir -p ~/.config
+mkdir -p ~/.logs/
 cp -r config/terminator  ~/.config/
 
 ## VIM
