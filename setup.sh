@@ -17,3 +17,5 @@ cp .vimrc ~
 mkdir -p ~/.tmux/plugins/
 git clone https://github.com/tmux-plugins/tpm ~/.tmux/plugins/tpm
 git clone https://github.com/tmux-plugins/tmux-yank ~/.tmux/plugins/tmux-yank
+cp .tmux.conf.local ~
+cp .tmux.conf ~
