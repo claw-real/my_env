@@ -64,3 +64,7 @@ let g:ctrlp_cmd = 'CtrlP'
 
 " Autoclose when last buffer is closed
 autocmd QuitPre * if empty(&bt) | lclose | endif
+
+if &diff
+    colorscheme solarized
+endif
