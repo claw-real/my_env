@@ -256,6 +256,7 @@ sexy_bash_prompt_get_git_info () {
   fi
 }
 
+KUBE_PS1_SYMBOL_USE_IMG=true
 source ~/git/others/kube-ps1/kube-ps1.sh
 
 # Define the sexy-bash-prompt
