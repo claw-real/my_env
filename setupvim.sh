@@ -19,6 +19,7 @@ git clone https://github.com/tpope/vim-fugitive.git
 git clone https://github.com/sheerun/vim-polyglot  ~/.vim/bundle/vim-polyglot
 git clone https://github.com/ctrlpvim/ctrlp.vim.git ~/.vim/bundle/ctrlp.vim
 git clone git://github.com/mfukar/robotframework-vim.git ~/.vim/bundle/robotframework-vim
+git clone https://github.com/VundleVim/Vundle.vim.git ~/.vim/bundle/Vundle.vim
 
 #pip install pylint
 
